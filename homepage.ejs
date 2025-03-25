@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("includes/head") %>
+<%- include("includes/header")%>
+<br>
+<body2>
+<h1 style="text-align: center;">انشاء حساب جديد</h1>
+<br>
+<br>
+<div4>    
+    <form action="/register" method="post">
+    <fieldset>
+      <legend style="text-align:center;background-color: red;margin-left: 10px;">استمارة انشاء الحساب</legend><br>
+      <ul>
+        <li>
+        <label for="username"><small>اسم المستخدم</small></label><br>
+        <input type="text" id="username" name="username" autocomplete="off">
+        </li>
+        <li>
+        <label for="national_id"><small>الرقم القومي </small></label><br>
+        <input type="number" id="national_id" name="national_id" autocomplete="off"><br>
+        </li>
+        <li>
+          <label for="mobilenumber"><small>رقم الهاتف</small></label><br>
+          <input type="number" id="mobilenumber" name="mobilenumber" autocomplete="off">
+        </li>
+        <li><label for="password"><small> كلمة المرور</small></label><br>
+          <input type="password" id="password" name="password" autocomplete="off"><br>
+        </li>        
+      </ul> 
+        <button style="margin-left:90px;color:red;"> انشاء</button> 
+        <% errors.forEach(error=>{ %>
+          <p style="color:red;"><%=error%></p>
+          <% }) %>  
+     </fieldset>
+    </form>
+</div4> 
+</body2>
+</html>
