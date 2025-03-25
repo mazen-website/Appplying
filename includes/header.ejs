@@ -1,0 +1,19 @@
+<header>
+  <nav>
+ <div6>
+    <ul>
+    <% if(user){ %>
+      <li><a href="/mainpage">الصفحة الرئيسية</a></li>
+      <li><a href="create-apat">تقديم علي الاسكان</a></li>
+      <li><a href="create-schl">تقديم علي مدرسة</a></li>
+      <li><a href="create-post">تقديم شكوي</a></li>
+      <li><a href="dashboard">المراجعات</a> </li>
+      <li><a href="/logout">تسجيل خروج</a></li>
+    <%  } else{%>
+    <li><a href="./login">تسجيل دخول</a> </li>
+    <li><a href="./">انشاء حساب</a> </li>    
+    <% } %>      
+    </ul>
+  </div6>
+  </nav>
+</header>
